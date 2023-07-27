@@ -1,38 +1,62 @@
-.App {
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.detail {
+  padding: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  animation: fadeIn .5s ease-in-out forwards;
 }
 
-.App-link {
-  color: #61dafb;
+.detail img {
+  margin: 10px; /* Ajusta el valor del margen según el espaciado deseado */
 }
 
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+  .detail__info{
+    width: 100%;
+    height: 600px;
+    img{
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .detail__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;}
+
+  .detail__info-title {
+      font-size: 2.5rem;
+      color: rgb(74, 74, 74);
+      font-weight: bold;
+  }
+
+  .detail__info-description {
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: start;
+  }
+
+  .detail__info-price  {
+      font-size: 2.40rem;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+  }
+
+  .detail__info-stock {
+      color: rgb(41, 206, 124);
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 500;
+  }
+
