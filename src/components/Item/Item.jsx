@@ -15,7 +15,7 @@ export const Item = ({ img, category, title, id, price }) => {
         </div>
         <span className="item__content-price">
           $
-          {price.toLocaleString("es-UY", {
+          {price.toLocaleString("es-MX", {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
           })}
